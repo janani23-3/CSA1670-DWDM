@@ -1,0 +1,8 @@
+names <- c("siri", "mahi", "chiru")
+age <- c(23, 24, 25)
+marks <- c(88, 78, 25)
+df <- data.frame(names, age, marks)
+min_age <- min(df$age)
+max_age <- max(df$age)
+cat(min_age, max_age, "\n")
+write.csv(df, "datafr.csv", row.names = FALSE)
